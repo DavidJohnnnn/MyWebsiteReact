@@ -1,0 +1,378 @@
+/*##################################################*/
+/* Side Wipe Animation Selectors */
+/*##################################################*/
+.sideWipeContainer {
+  overflow: hidden;
+  position: absolute;
+  height: 5px;
+  max-width: inherit;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+.sideWipeContainer .sideWipe1 {
+  height: 5px;
+  bottom: 0;
+  width: 25%;
+  position: absolute;
+  margin: 0;
+  background-color: #222831;
+  overflow: hidden;
+  display: inline-block;
+  transition: all 7000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  /* custom */
+}
+.sideWipeContainer .leftSideWipe {
+  transition: all 0ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  /* custom */
+  left: -27%;
+}
+.sideWipeContainer .rightSideWipe {
+  transition: all 7000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  /* custom */
+  left: 126%;
+}
+
+/*##################################################*/
+/* Unique Div: titleNavBarBox */
+/*##################################################*/
+.titleBar {
+  padding: 0;
+  overflow: hidden;
+}
+.titleBar .container-fluid {
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.navbar {
+  transition: all 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  background-color: #eeeeee !important;
+}
+
+/*--------------------------------------------*/
+/* navbar Logo Basic Classes */
+/*--------------------------------------------*/
+.myLogo {
+  /* Navbar Logo Class Selector */
+  color: #222831;
+  font-size: 2rem;
+  /* (50px font-size / 2560px width */
+  overflow: hidden;
+}
+
+.middleLine {
+  color: #393e46;
+}
+
+.textAlter {
+  color: #ffffff;
+}
+
+.myLogo.expandPadding {
+  padding: 12px 20px;
+  /* top right bottom left */
+}
+
+.myLogo.hiddenPadding {
+  padding: 0 0 0 0;
+}
+
+.navbar.offblink {
+  border-bottom: 0 gainsboro solid;
+}
+
+.navbar.onLink {
+  max-height: 1000px;
+  border-bottom: 1px gainsboro solid;
+}
+
+@media (min-width: 1441px) {
+  .myLogo {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 1440px) and (min-width: 769px) {
+  .myLogo {
+    font-size: 2vw;
+  }
+}
+@media (max-device-width: 768px) and (min-device-width: 426px) {
+  .myLogo {
+    font-size: 3vw;
+  }
+}
+@media (max-device-width: 425px) and (min-device-width: 376px) {
+  .myLogo {
+    font-size: 5vw;
+  }
+}
+@media (max-device-width: 375px) and (min-device-width: 0px) {
+  .myLogo {
+    font-size: 6vw;
+  }
+}
+
+.title-A, .textAlter {
+  transition: all 2500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.myLogo.offblink {
+  color: #222831;
+  max-height: 0;
+}
+
+.myLogo.onLink {
+  max-height: 100px;
+}
+.myLogo.onLink .textAlter {
+  text-shadow: 1px 0 #00adb5, 2px 0 #00adb5, 3px 0 #00adb5, 4px 0 #00adb5, 5px 0 #00adb5, 6px 0 #00adb5;
+}
+
+.myLogo.blink {
+  max-height: 100px;
+  color: #393e46;
+}
+.myLogo.blink .title-A {
+  text-shadow: 1px 0 white, 2px 0 white, 3px 0 #00adb5, 4px 0 white, 5px 0 #00adb5, 6px 0 white, 7px 0 #00adb5, 8px 0 white;
+}
+.myLogo.blink .textAlter {
+  text-shadow: 1px 0 #00adb5, 2px 0 #00adb5, 3px 0 #393e46, 4px 0 white, 5px 0 #393e46, 6px 0 #00adb5, 7px 0 #00adb5, 8px 0 #00adb5, 9px 0 #00adb5;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #222831;
+}
+
+.navbar-light .navbar-nav .nav-link .fa-home {
+  color: #00adb5;
+}
+
+a.Links:link {
+  border: 0 #00adb5 solid;
+  border-width: 0;
+  transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+a.Links:hover {
+  border-width: 1px 0;
+}
+
+/*--------------------------------------------*/
+/* navbar Links animation */
+/*--------------------------------------------*/
+.titleBar li {
+  transition: all 6000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.nav-item.offblink {
+  max-height: 0;
+  transform: rotateX(0deg);
+}
+
+.nav-item.onLink {
+  max-height: 200px;
+  transform: rotateX(-360deg);
+}
+
+.navbar-nav .btn-secondary {
+  transition: all 500ms linear;
+  color: white;
+  background-color: #00adb5;
+  border-color: white;
+  border-radius: 50%;
+}
+.navbar-nav .btn-secondary:hover {
+  color: #00adb5;
+  background-color: white;
+  border-color: #00adb5;
+  border-radius: 50%;
+}
+
+/*--------------------------------------------*/
+/* Menu toggler Links animation */
+/*--------------------------------------------*/
+.navbar-toggler {
+  border: 0 solid #08d9d6;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 750ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+}
+
+.navbar-toggler:hover {
+  transform: rotate(360deg);
+  border: 0px solid #08d9d6;
+}
+
+.navbar-toggler.offblink {
+  font-size: 0;
+  transform: rotate(360deg);
+  color: #393e46;
+}
+
+.navbar-toggler.onLink {
+  color: #08d9d6;
+}
+
+.navbar-toggler.onLink:hover {
+  color: #252a34;
+}
+
+/*--------------------------------------------*/
+/* navbar links Responsive Section */
+/*--------------------------------------------*/
+@media (min-width: 1441px) {
+  a.Links:link {
+    padding: 10px 2px 14px;
+    font-size: 0.95vw;
+  }
+
+  a.Links:hover {
+    font-size: 1.05vw;
+  }
+
+  .navbar-nav .btn-secondary {
+    font-size: 1.1vw;
+  }
+  .navbar-nav .btn-secondary:hover {
+    font-size: 1.199 vw;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1200px) {
+  a.Links:link {
+    padding: 10px 2px 14px;
+    font-size: 0.95vw;
+  }
+
+  a.Links:hover {
+    font-size: 1.05vw;
+  }
+
+  .navbar-nav .btn-secondary {
+    font-size: 1.1vw;
+  }
+  .navbar-nav .btn-secondary:hover {
+    font-size: 1.199 vw;
+  }
+}
+@media (max-width: 1199px) and (min-width: 769px) {
+  a.Links:link {
+    padding: 10px 2px 14px;
+    font-size: 0.95vw;
+  }
+
+  a.Links:hover {
+    font-size: 1.05vw;
+  }
+
+  .navbar-nav .btn-secondary {
+    margin: 15px 0 0;
+    font-size: 1.1vw;
+  }
+  .navbar-nav .btn-secondary:hover {
+    font-size: 1.199 vw;
+  }
+
+  .navbar-toggler {
+    font-size: 2.5vw;
+  }
+}
+@media (max-device-width: 768px) and (min-device-width: 426px) {
+  a.Links:link {
+    padding: 10px 2px 14px;
+    font-size: 1.4vw;
+  }
+
+  a.Links:hover {
+    font-size: 1.5vw;
+  }
+
+  .navbar-nav .btn-secondary {
+    margin: 15px 0 0;
+    font-size: 1.4vw;
+  }
+  .navbar-nav .btn-secondary:hover {
+    font-size: 1.526 vw;
+  }
+
+  .navbar-toggler {
+    font-size: 3vw;
+  }
+}
+@media (max-device-width: 425px) and (min-device-width: 376px) {
+  a.Links:link {
+    padding: 10px 2px 14px;
+    font-size: 2vw;
+  }
+
+  a.Links:hover {
+    font-size: 2.1vw;
+  }
+
+  .navbar-nav .btn-secondary {
+    margin: 25px 0 0;
+    font-size: 2vw;
+  }
+  .navbar-nav .btn-secondary:hover {
+    font-size: 2.18 vw;
+  }
+
+  .navbar-toggler {
+    font-size: 5vw;
+  }
+}
+@media (max-device-width: 375px) and (min-device-width: 0px) {
+  a.Links:link {
+    padding: 10px 2px 14px;
+    font-size: 2vw;
+  }
+
+  a.Links:hover {
+    font-size: 2.1vw;
+  }
+
+  .navbar-nav .btn-secondary {
+    margin: 25px 0 0;
+    font-size: 3vw;
+  }
+  .navbar-nav .btn-secondary:hover {
+    font-size: 3.27 vw;
+  }
+
+  .navbar-toggler {
+    font-size: 5vw;
+  }
+}
+/*--------------------------------------------*/
+/* Navbar sideWipe animation */
+/*--------------------------------------------*/
+.titleBar .sideWipe {
+  height: 5px;
+  bottom: 0;
+  width: 25%;
+  position: absolute;
+  margin: 0;
+  background-color: #222831;
+  overflow: hidden;
+  z-index: 4;
+  transition: all 7000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+}
+.titleBar .leftSideWipe {
+  transition: all 0ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  left: -27%;
+}
+.titleBar .rightSideWipe {
+  transition: all 7000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  left: 126%;
+}
+
+.myLogo {
+  transition: all 1000ms cubic-bezier(0.875, 0.005, 0.135, 1);
+}

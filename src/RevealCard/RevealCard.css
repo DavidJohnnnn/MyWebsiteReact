@@ -1,0 +1,205 @@
+.RevealCard {
+  overflow-x: hidden;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.RevealCard .Title {
+  overflow: hidden;
+}
+.RevealCard .sideWipe1 {
+  height: 6px;
+  top: 0;
+  width: 25%;
+  position: absolute;
+  margin: 0;
+  background-color: #00adb5;
+  overflow: hidden;
+  transition: all 7000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+}
+.RevealCard .sideWipe2 {
+  height: 6px;
+  top: 0;
+  width: 25%;
+  position: absolute;
+  margin: 0;
+  background-color: #00adb5;
+  overflow: hidden;
+  transition: all 7000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+}
+.RevealCard .leftSideWipe {
+  transition: all 0ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  left: -27%;
+}
+.RevealCard .rightSideWipe {
+  transition: all 7000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  left: 126%;
+}
+.RevealCard .vertWipe {
+  height: 300px;
+  width: 5px;
+  position: relative;
+  margin: 0;
+  background-color: #00adb5;
+}
+.RevealCard .upVertWipe {
+  transition: all 0ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  top: -300px;
+}
+.RevealCard .downVertWipe {
+  transition: all 4000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  top: 600px;
+}
+.RevealCard .upVertWipe1 {
+  transition: all 4000ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  top: -300px;
+}
+.RevealCard .downVertWipe1 {
+  transition: all 0ms cubic-bezier(0.21, 0.635, 0.47, 1.01);
+  top: 600px;
+}
+.RevealCard .verticalLine {
+  background-color: #222831;
+  position: relative;
+  height: 300px;
+  width: 10px;
+  top: 0;
+  margin: auto;
+  overflow: hidden;
+}
+.RevealCard .verticalLine2 {
+  background-color: #222831;
+  position: relative;
+  height: 300px;
+  width: 10px;
+  top: 0;
+  margin: auto;
+  overflow: hidden;
+}
+.RevealCard .container-fluid {
+  margin: 9% auto;
+  width: 60%;
+  transition: all 2000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.RevealCard .container-fluid .card {
+  border: 0;
+  border-top: 10px solid #222831;
+  transition: all 2000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.RevealCard .container-fluid .card-title {
+  padding: 10px 0;
+  margin: 0;
+  max-height: auto;
+  color: #222831;
+  background-color: #eeeeee;
+  font-size: 9.375rem;
+  font-weight: 100;
+  text-shadow: 2px 2px #00adb5;
+  transition: all 2000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.RevealCard .container-fluid .card.Text {
+  max-height: 1000px;
+  color: #eeeeee;
+  background-color: #00adb5;
+}
+.RevealCard .container-fluid .card .fas.fa-plus {
+  padding: 10px 0;
+  font-size: 1rem;
+  overflow: hidden;
+  max-height: 10000px;
+  transition: all 2000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.RevealCard .container-fluid .card .fas.fa-plus.plusHide {
+  max-height: 0;
+  padding: 0;
+  font-size: 0;
+  background-color: #eeeeee;
+  border-bottom: 0 solid #222831;
+}
+.RevealCard .container-fluid .card .card-text.textReveal {
+  max-height: 1000px;
+  padding: 25px 20px;
+  color: #222831;
+  background-color: #eeeeee;
+  border-bottom: 10px solid #222831;
+}
+.RevealCard .container-fluid .card .card-text {
+  max-height: 0;
+  padding: 0 20px;
+  font-size: 1.45rem;
+  overflow: hidden;
+  text-align: left;
+  transition: all 2000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.RevealCard .container-fluid .card .card-text small {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+.RevealCard .container-fluid .card .card-text .btn {
+  font-size: 0.8rem;
+}
+.RevealCard .cardSec:hover .card-title {
+  color: #00adb5;
+  text-shadow: 2px 2px #222831, 3px 3px #222831, 4px 4px #222831;
+}
+@media (max-width: 1199px) {
+  .RevealCard .container .card-title {
+    font-size: 8.375rem;
+  }
+  .RevealCard .container .card .fas.fa-plus {
+    font-size: 1rem;
+  }
+  .RevealCard .container .card .card-text {
+    font-size: 1.35rem;
+  }
+}
+@media (max-width: 991px) {
+  .RevealCard .container .card-title {
+    font-size: 7.375rem;
+  }
+  .RevealCard .container .card .fas.fa-plus {
+    font-size: 0.8rem;
+  }
+  .RevealCard .container .card .card-text {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .RevealCard .container .card-title {
+    font-size: 5.375rem;
+  }
+  .RevealCard .container .card .fas.fa-plus {
+    font-size: 0.65rem;
+  }
+  .RevealCard .container .card .card-text {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 575px) {
+  .RevealCard .container .card-title {
+    font-size: 4.375rem;
+  }
+  .RevealCard .container .card .fas.fa-plus {
+    font-size: 0.5rem;
+  }
+  .RevealCard .container .card .card-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Revealing RevealCard on scroll */
+.hideDiv {
+  transition: transform 2500ms cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    opacity 3000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  max-width: 2560px;
+  opacity: 0;
+  transform: rotateY(60deg) rotateZ(30deg);
+}
+
+.revealDiv {
+  transition: transform 2500ms cubic-bezier(0.785, 0.135, 0.15, 0.86),
+    opacity 3000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  max-width: 2560px;
+  opacity: 100%;
+  transform: rotateY(0) rotateZ(0);
+}
