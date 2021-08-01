@@ -22,39 +22,35 @@ const miniSection = () => (
   </small>
 );
 
-const RevealCard = ({ isVisible }) => {
-  const reveal = isVisible ? "revealDiv" : "hideDiv";
-
-
-
+const RevealCard = (props) => {
   return (
-    <section className={"RevealCard " + reveal}>
-      <div className="container-fluid">
-        <div className="verticalLine">
-          <div className="vertWipe upVertWipe"></div>
-        </div>
-
-        <section className="cardSec">
-          <div className="card Title">
-            <div className="sideWipe1 leftSideWipe"></div>
-            <h5 className="card-title"></h5>
-            <div className="sideWipe2 leftSideWipe"></div>
-          </div>
-          <div className="card Text">
-            <i className="fas fa-plus"></i>
-
-            <p className="card-text">
-              {props.children}
-            </p>
-            <miniSection />
-          </div>
-        </section>
-
-        <div className="verticalLine2">
-          <div className="vertWipe downVertWipe"></div>
-        </div>
+    <div className="container-fluid">
+      <div className="verticalLine">
+        <div className="vertWipe upVertWipe"></div>
       </div>
-    </section>
+
+      <section className="cardSec">
+        <div className="card Title">
+          <div className="sideWipe1 leftSideWipe"></div>
+          <h5 className="card-title">
+            {props.title}
+          </h5>
+          <div className="sideWipe2 leftSideWipe"></div>
+        </div>
+        <div className="card Text">
+          <i className="fas fa-plus"></i>
+
+          <p className="card-text">
+            {props.children}
+          </p>
+          <miniSection />
+        </div>
+      </section>
+
+      <div className="verticalLine2">
+        <div className="vertWipe downVertWipe"></div>
+      </div>
+    </div>
   );
 };
 

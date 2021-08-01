@@ -4,11 +4,12 @@ import TitleBar from "./Navbar/TitleBar";
 import NavbarBrand from "./Navbar/NavbarBrand";
 import NavLinkList from "./Navbar/NavLinkList";
 import RevealCard from "./RevealCard/RevealCard";
+import RevealContainer from "./RevealCard/RevealContainer";
 import TrackVisibility from "react-on-screen";
 
 function App() {
   const state = {
-    once: true,
+    once: false,
     throttleInterval: 150,
     offset: 0,
     partialVisibility: true,
@@ -24,8 +25,8 @@ function App() {
         />
       </TitleBar>
 
-      <TrackVisibility {...state}>
-        <RevealCard>
+      <RevealContainer state={state}>
+        <RevealCard title="Purpose">
           My name is David and this is my website. This website contains some
           useful information about me. I am an Electrical Engineering Graduate
           from the University of Toronto, St. George Campus (BASc) in search of
@@ -35,9 +36,9 @@ function App() {
           <br />
           <br />
         </RevealCard>
-      </TrackVisibility>
-      <TrackVisibility {...state}>
-        <RevealCard>
+      </RevealContainer>
+      <RevealContainer state={state}>
+        <RevealCard title="Purpose">
           My name is David and this is my website. This website contains some
           useful information about me. I am an Electrical Engineering Graduate
           from the University of Toronto, St. George Campus (BASc) in search of
@@ -47,9 +48,9 @@ function App() {
           <br />
           <br />
         </RevealCard>
-      </TrackVisibility>
-      <TrackVisibility {...state}>
-        <RevealCard>
+      </RevealContainer>
+      <RevealContainer state={state}>
+        <RevealCard title="Purpose">
           My name is David and this is my website. This website contains some
           useful information about me. I am an Electrical Engineering Graduate
           from the University of Toronto, St. George Campus (BASc) in search of
@@ -59,9 +60,9 @@ function App() {
           <br />
           <br />
         </RevealCard>
-      </TrackVisibility>
-      <TrackVisibility {...state}>
-        <RevealCard>
+      </RevealContainer>
+      <RevealContainer state={state}>
+        <RevealCard title="Purpose">
           My name is David and this is my website. This website contains some
           useful information about me. I am an Electrical Engineering Graduate
           from the University of Toronto, St. George Campus (BASc) in search of
@@ -71,7 +72,7 @@ function App() {
           <br />
           <br />
         </RevealCard>
-      </TrackVisibility>
+      </RevealContainer>
 
       {/* <!-- JQuery and JavaScript incorporation --> */}
     </div>
