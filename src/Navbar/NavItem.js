@@ -3,6 +3,11 @@ import "./titleBar.css";
 
 
 const NavItem = (props) => {
+  const newTab = (e) => {
+    window.open(props.href);
+    e.preventDefault();
+  }
+
   let isActive = "";
   if (props.isActive === "true") {
     isActive = " active";
@@ -15,7 +20,7 @@ const NavItem = (props) => {
           className="btn btn-secondary"
           href={props.href}
           role="button"
-          onClick={"window.open(props.href)"}
+          onClick={newTab}
         >
           {props.children}
         </a>

@@ -5,7 +5,7 @@ import NavbarBrand from "./Navbar/NavbarBrand";
 import NavLinkList from "./Navbar/NavLinkList";
 import RevealCard from "./RevealCard/RevealCard";
 import RevealContainer from "./RevealCard/RevealContainer";
-import TrackVisibility from "react-on-screen";
+import BottomDiv from "./BottomDiv/BottomDiv";
 
 function App() {
   const state = {
@@ -26,55 +26,39 @@ function App() {
       </TitleBar>
 
       <RevealContainer state={state}>
-        <RevealCard title="Purpose">
+        <RevealCard title={"Purpose"}>
           My name is David and this is my website. This website contains some
           useful information about me. I am an Electrical Engineering Graduate
           from the University of Toronto, St. George Campus (BASc) in search of
           programming and web development work. You can explore this website to
           learn more about me. Try my{" "}
           <a href="My-History.html">Relevant Experiences</a> next.
-          <br />
-          <br />
         </RevealCard>
       </RevealContainer>
+
       <RevealContainer state={state}>
-        <RevealCard title="Purpose">
-          My name is David and this is my website. This website contains some
-          useful information about me. I am an Electrical Engineering Graduate
-          from the University of Toronto, St. George Campus (BASc) in search of
-          programming and web development work. You can explore this website to
-          learn more about me. Try my{" "}
-          <a href="My-History.html">Relevant Experiences</a> next.
-          <br />
-          <br />
+        <RevealCard title={"My History"}>
+          This page focuses on some of my highlights over the past few years
+          that I feel are relevant.
         </RevealCard>
       </RevealContainer>
+
       <RevealContainer state={state}>
-        <RevealCard title="Purpose">
-          My name is David and this is my website. This website contains some
-          useful information about me. I am an Electrical Engineering Graduate
-          from the University of Toronto, St. George Campus (BASc) in search of
-          programming and web development work. You can explore this website to
-          learn more about me. Try my{" "}
-          <a href="My-History.html">Relevant Experiences</a> next.
-          <br />
-          <br />
+        <RevealCard title={"My Training"}>
+          This page deals with my university program and the skills I have
+          picked up through both my university experience as well as learning on
+          my own time.
         </RevealCard>
       </RevealContainer>
+
       <RevealContainer state={state}>
-        <RevealCard title="Purpose">
-          My name is David and this is my website. This website contains some
-          useful information about me. I am an Electrical Engineering Graduate
-          from the University of Toronto, St. George Campus (BASc) in search of
-          programming and web development work. You can explore this website to
-          learn more about me. Try my{" "}
-          <a href="My-History.html">Relevant Experiences</a> next.
-          <br />
-          <br />
+        <RevealCard title={"Who Am I?"} miniSec={false}>
+          Just a normal guy moving forward.
         </RevealCard>
       </RevealContainer>
 
       {/* <!-- JQuery and JavaScript incorporation --> */}
+      <BottomDiv />
     </div>
   );
 }
